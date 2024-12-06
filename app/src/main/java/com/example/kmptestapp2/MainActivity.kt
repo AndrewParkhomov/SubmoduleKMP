@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        getFibonacciNumbers(2)
+        println(getFibonacciNumbers(10))
         setContent {
             KmpTestApp2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
