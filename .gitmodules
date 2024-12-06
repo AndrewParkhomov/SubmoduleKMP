@@ -1,0 +1,3 @@
+[submodule "kmp-shared"]
+	path = kmp-shared
+	url = https://github.com/AndrewParkhomov/KmpLib2.git

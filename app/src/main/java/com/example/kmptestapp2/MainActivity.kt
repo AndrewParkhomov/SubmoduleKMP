@@ -12,11 +12,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.kmptestapp2.ui.theme.KmpTestApp2Theme
+import kmp.shared.getFibonacciNumbers
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        getFibonacciNumbers(2)
         setContent {
             KmpTestApp2Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->

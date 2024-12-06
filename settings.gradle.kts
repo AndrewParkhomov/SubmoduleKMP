@@ -12,7 +12,7 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "KmpTestApp2"
 include(":app")
+include(":kmp-shared:shared")
+project(":kmp-shared").projectDir = file("kmp-shared/shared")
  
